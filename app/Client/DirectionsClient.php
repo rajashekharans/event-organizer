@@ -16,7 +16,7 @@ class DirectionsClient
         return $this->getMapService($service)->getDistanceAndDuration($venue, $school);
     }
 
-    private function getMapService(string $service): MapServiceInterface
+    public function getMapService(string $service): MapServiceInterface
     {
         switch ($service) {
             case self::MAP_BOX:
