@@ -17,13 +17,12 @@ class CreateVenueTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('address_line_1');
-            $table->string('address_line_2');
+            $table->string('address_line_2')->nullable();
             $table->string('suburb');
             $table->string('state');
             $table->string('country');
             $table->integer('postcode');
-            $table->integer('distance_from_school');
-            $table->integer('duration_from_school');
+            $table->string('coordinates');
             $table->timestamps();
         });
     }

@@ -20,6 +20,8 @@ class CreateEventTable extends Migration
             $table->dateTime('date_time');
             $table->foreignId('event_type_id')->constrained();
             $table->foreignId('venue_id')->constrained();
+            $table->float('distance_from_school', 8, 2)->nullable();
+            $table->float('duration_from_school', 8 , 2)->nullable();
             $table->timestamps();
         });
     }

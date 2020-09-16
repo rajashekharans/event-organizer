@@ -17,11 +17,12 @@ class CreateSchoolTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('address_line_1');
-            $table->string('address_line_2');
+            $table->string('address_line_2')->nullable();
             $table->string('suburb');
             $table->string('state');
             $table->string('country');
             $table->integer('postcode');
+            $table->string('coordinates');
             $table->timestamps();
         });
     }
