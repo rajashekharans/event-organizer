@@ -8,6 +8,7 @@ Table school {
   state varchar
   country varchar
   postcode int
+  coordinates string
   created_at timestamp
   updated_at timestamp
 }
@@ -19,6 +20,8 @@ Table events {
   description text
   date_time timestamp
   venue_id int
+  distance_from_school float
+  duration_from_school float
   created_at timestamp
   updated_at timestamp
 }
@@ -32,8 +35,7 @@ Table venues {
   state varchar
   country varchar
   postcode int
-  distance_from_school int
-  duration_from_school int
+  coordinates string
   created_at timestamp
   updated_at timestamp
 }
