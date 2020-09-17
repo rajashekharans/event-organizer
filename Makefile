@@ -23,4 +23,7 @@ db-seed:
 	docker exec -it event_organizer php artisan db:seed
 
 run-tests:
-	docker exec -it event_organizer vendor/bin/phpunit --testsuite Unit --log-junit build/logs/phpunit.junit.xml --coverage-xml build/logs/coverage-xml
+	docker exec -it event_organizer php artisan test
+
+add-participants:
+	docker exec -it event_organizer php artisan db:seed --class=EventParticipantSeeder
