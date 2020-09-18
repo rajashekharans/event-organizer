@@ -42,6 +42,12 @@ done while creating the event and stored along with event information.
 
 App is currently designed to use MapBox API, however it can be extended for any other vendors.
 
+## Database
+
+The database [DBML](https://github.com/holistics/dbml) schema documentation can be found in [this file](https://github.com/rajashekharans/event-organizer/blob/master/docs/schema.dbml) and should be updated whenever the schema changes.
+
+![DB Diagram](./docs/schema.png)
+
 ## Assumptions
 - This app is targeted for a single school, all events are related to that school.
 
